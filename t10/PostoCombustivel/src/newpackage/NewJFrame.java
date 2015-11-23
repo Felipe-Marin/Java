@@ -186,7 +186,14 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        controle.cadastra_posto();
+        String cnpj = jTextField1.getText();
+        String social = jTextField2.getText();
+        String fantasia = jTextField3.getText();
+        String bandeira = jTextField4.getText();
+        String endereco = jTextField5.getText();
+        String bairro = jTextField6.getText();
+        String cep = jTextField7.getText();
+        controle.cadastra_posto(cnpj, social, fantasia, bandeira, endereco, bairro, cep);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
