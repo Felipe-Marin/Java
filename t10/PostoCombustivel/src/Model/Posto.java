@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package Model;
 
 /**
  *
  * @author Felipe
  */
-class Posto{
+public class Posto{
     private String cnpj;
     private String razao_social;
     private String nome_fantasia;
@@ -17,6 +17,7 @@ class Posto{
     private String endereco;
     private String bairro;
     private String cep;
+    private String imagem;
     
     public Posto(){
         cnpj= "";
@@ -26,6 +27,7 @@ class Posto{
         endereco = "";
         bairro = "";
         cep = "";
+        imagem = "";
     }
     
     public void set_cnpj(String cnpj){
@@ -54,6 +56,10 @@ class Posto{
     
     public void set_cep(String cep){
         this.cep = cep;
+    }
+    
+    public void set_imagem(String imagem){
+        this.imagem = imagem;
     }
     
 }

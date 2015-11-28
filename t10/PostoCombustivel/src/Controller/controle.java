@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package newpackage;
+package View;
+
+import Model.Posto;
 
 /**
  *
  * @author Felipe
  */
 class Controller{
-    private NewJFrame view;
+    private CadastrarPosto view;
     
-    Controller(NewJFrame view){
+    Controller(CadastrarPosto view){
         this.view = view;
     }
     
