@@ -12,9 +12,9 @@ import Model.Posto;
  * @author Felipe
  */
 class Controller{
-    private CadastrarPosto view;
+    private CadastraPosto view;
     
-    Controller(CadastrarPosto view){
+    Controller(CadastraPosto view){
         this.view = view;
     }
     

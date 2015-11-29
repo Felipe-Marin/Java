@@ -18,6 +18,9 @@ public class Posto{
     private String bairro;
     private String cep;
     private String imagem;
+    private Combustivel[] gasolina;
+    private Combustivel[] etanol;
+    private Combustivel[] diesel;
     
     public Posto(){
         cnpj= "";
@@ -28,6 +31,7 @@ public class Posto{
         bairro = "";
         cep = "";
         imagem = "";
+        etanol.
     }
     
     public void set_cnpj(String cnpj){
