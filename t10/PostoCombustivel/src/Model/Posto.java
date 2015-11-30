@@ -31,7 +31,6 @@ public class Posto{
         bairro = "";
         cep = "";
         imagem = "";
-        etanol.
     }
     
     public void set_cnpj(String cnpj){

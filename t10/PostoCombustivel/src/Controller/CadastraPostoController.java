@@ -3,20 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package Controller;
 
 import Model.Posto;
+import View.CadastraPosto;
 
 /**
  *
  * @author Felipe
  */
-class Controller{
-    private CadastraPosto view;
-    
-    Controller(CadastraPosto view){
+public class CadastraPostoController {
+    private View.CadastraPosto view;
+
+    public CadastraPostoController(CadastraPosto view) {
         this.view = view;
     }
+    
+    
     
     public void cadastra_posto(String cnpj, String social, String fantasia, String bandeira, String endereco, String bairro, String cep){
         Posto novo_posto = new Posto();
@@ -28,5 +31,4 @@ class Controller{
         novo_posto.set_bairro(bairro);
         novo_posto.set_cep(cep);
     }
-    
 }

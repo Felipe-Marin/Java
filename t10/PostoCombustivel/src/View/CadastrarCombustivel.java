@@ -5,6 +5,8 @@
  */
 package View;
 
+import Controller.CadastrarCombustivelController;
+
 /**
  *
  * @author Felipe
@@ -14,8 +16,11 @@ public class CadastrarCombustivel extends javax.swing.JPanel {
     /**
      * Creates new form CadastrarCombustivel
      */
+    private CadastrarCombustivelController controller = null;
+    
     public CadastrarCombustivel() {
         initComponents();
+        controller = new CadastrarCombustivelController(this);
     }
 
     /**
