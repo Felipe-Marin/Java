@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package View;
-
+import Controller.*;
 
 /**
  *
@@ -15,8 +15,15 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
+    private CadastraPostoController controle_posto;
+    private CadastrarCombustivelController controle_combustivel;    
+    
     public Main() {
         initComponents();
+        controle_posto = new CadastraPostoController(cadastraPosto);
+        controle_combustivel = new CadastrarCombustivelController(cadastraCombustivel, controle_posto.get_list());
+        cadastraPosto.set_controle(controle_posto);
+        cadastraCombustivel.set_controle(controle_combustivel);
     }
 
     /**

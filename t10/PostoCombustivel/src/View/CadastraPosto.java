@@ -16,11 +16,11 @@ public class CadastraPosto extends javax.swing.JPanel {
      * Creates new form CadastraPosto
      */
     private CadastraPostoController controller = null;
+    boolean edit_status = false;
     
     public CadastraPosto() {
         initComponents();
-        controller = new CadastraPostoController(this);
-        listPostos.setListData(controller.get_list().toArray());
+        //listPostos.setListData(controller.get_list().toArray());
     }
 
     /**
@@ -202,6 +202,11 @@ public class CadastraPosto extends javax.swing.JPanel {
         });
 
         btExcluir.setText("Excluir");
+        btExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btExcluirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -245,6 +250,10 @@ public class CadastraPosto extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    public void set_controle(CadastraPostoController controller){
+        this.controller = controller;
+    }
+    
     private void btSalvarPostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarPostoActionPerformed
         String cnpj = tfCNPJ.getText();
         String social = tfRazao.getText();
@@ -254,7 +263,11 @@ public class CadastraPosto extends javax.swing.JPanel {
         String bairro = tfBairro.getText();
         String cep = tfCEP.getText();
         String imagem = tfImagem.getText();
-        controller.cadastra_posto(cnpj, social, fantasia, bandeira, endereco, bairro, cep);
+        if(edit_status)
+            controller.editar_posto(cnpj, social, fantasia, bandeira, endereco, bairro, cep, imagem, listPostos.getSelectedValue());
+        else
+            controller.cadastra_posto(cnpj, social, fantasia, bandeira, endereco, bairro, cep, imagem);
+        edit_status = false;
         listPostos.setListData(controller.get_list().toArray());
     }//GEN-LAST:event_btSalvarPostoActionPerformed
 
@@ -278,8 +291,23 @@ public class CadastraPosto extends javax.swing.JPanel {
 
     private void btEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEditarActionPerformed
         // TODO add your handling code here:
-        
+        String[] list = controller.get_selected_list_values(listPostos.getSelectedValue());
+        tfCNPJ.setText(list[0]);
+        tfNome.setText(list[2]);
+        tfRazao.setText(list[1]);
+        tfBandeira.setText(list[3]);
+        tfEndereco.setText(list[4]);
+        tfCEP.setText(list[6]);
+        tfBairro.setText(list[5]);
+        tfImagem.setText(list[7]);
+        edit_status = true;
     }//GEN-LAST:event_btEditarActionPerformed
+
+    private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
+        // TODO add your handling code here:
+        controller.excluir_posto(listPostos.getSelectedValue());
+        listPostos.setListData(controller.get_list().toArray());
+    }//GEN-LAST:event_btExcluirActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

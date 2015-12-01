@@ -6,6 +6,7 @@
 package Model;
 import java.util.List;
 import java.util.ArrayList;
+import java.io.File;
 
 /**
  *
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 public class ListaPostos{
     private int num_postos;
     private List<Posto> list_postos;
+    File postocsv = new File("posto.csv");
     
     public ListaPostos(){
         num_postos = 0;
@@ -51,4 +53,9 @@ public class ListaPostos{
         return list_postos;
     }
     
+    public void save_to_csv(){
+        for(Posto p :list_postos){
+        }
+        
+    }
 }
