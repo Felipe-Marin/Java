@@ -20,6 +20,7 @@ public class CadastraPosto extends javax.swing.JPanel {
     public CadastraPosto() {
         initComponents();
         controller = new CadastraPostoController(this);
+        listPostos.setListData(controller.get_list().toArray());
     }
 
     /**
@@ -194,6 +195,11 @@ public class CadastraPosto extends javax.swing.JPanel {
         jScrollPane1.setViewportView(listPostos);
 
         btEditar.setText("Editar");
+        btEditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEditarActionPerformed(evt);
+            }
+        });
 
         btExcluir.setText("Excluir");
 
@@ -249,6 +255,7 @@ public class CadastraPosto extends javax.swing.JPanel {
         String cep = tfCEP.getText();
         String imagem = tfImagem.getText();
         controller.cadastra_posto(cnpj, social, fantasia, bandeira, endereco, bairro, cep);
+        listPostos.setListData(controller.get_list().toArray());
     }//GEN-LAST:event_btSalvarPostoActionPerformed
 
     private void btBuscaImagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBuscaImagemActionPerformed
@@ -268,6 +275,11 @@ public class CadastraPosto extends javax.swing.JPanel {
         tfBairro.setText("");
         tfImagem.setText("");
     }//GEN-LAST:event_btLimpaActionPerformed
+
+    private void btEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEditarActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btEditarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

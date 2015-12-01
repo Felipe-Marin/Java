@@ -5,8 +5,9 @@
  */
 package Controller;
 
-import Model.Posto;
+import Model.*;
 import View.CadastraPosto;
+import java.util.List;
 
 /**
  *
@@ -14,6 +15,7 @@ import View.CadastraPosto;
  */
 public class CadastraPostoController {
     private View.CadastraPosto view;
+    private ListaPostos lista_postos = new ListaPostos();
 
     public CadastraPostoController(CadastraPosto view) {
         this.view = view;
@@ -30,5 +32,14 @@ public class CadastraPostoController {
         novo_posto.set_endereco(endereco);
         novo_posto.set_bairro(bairro);
         novo_posto.set_cep(cep);
+        lista_postos.addPosto(novo_posto);
+    }
+    
+    public String[] get_namelist(){
+        return lista_postos.get_namelist();
+    }
+    
+    public List<Posto> get_list(){
+        return lista_postos.get_list();
     }
 }

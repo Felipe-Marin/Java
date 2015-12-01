@@ -18,9 +18,6 @@ public class Posto{
     private String bairro;
     private String cep;
     private String imagem;
-    private Combustivel[] gasolina;
-    private Combustivel[] etanol;
-    private Combustivel[] diesel;
     
     public Posto(){
         cnpj= "";
@@ -65,4 +62,12 @@ public class Posto{
         this.imagem = imagem;
     }
     
+    public String get_nome(){
+        return this.nome_fantasia;
+    }
+    
+    @Override
+    public String toString(){
+        return nome_fantasia;
+    }
 }
