@@ -74,4 +74,8 @@ public class CadastraPostoController {
         list[7] = posto.get_imagem();
         return list;
     }
+    
+    public List busca_posto(String bairro){
+        return lista_postos.busca_bairro(bairro);
+    }
 }

@@ -64,7 +64,6 @@ public class CSVPosto{
             csvFilePrinter = new CSVPrinter(fw, csvFileFormat);
             csvFilePrinter.printRecord(FILE_HEADER);
             for(Posto p : lista_posto){
-                System.out.println(p.get_lista_atributos());
                 csvFilePrinter.printRecord(p.get_lista_atributos());
             }
             

@@ -51,9 +51,13 @@ public class ListaPostos{
         return list_postos;
     }
     
-    public void save_to_csv(){
-        for(Posto p :list_postos){
+    public List<Posto> busca_bairro(String bairro){
+        List<Posto> lista_bairro = new ArrayList();
+        for (Posto p : list_postos) {
+            if(p.get_bairro().equals(bairro)){
+                lista_bairro.add(p);
+            }
         }
-        
+        return lista_bairro;
     }
 }
