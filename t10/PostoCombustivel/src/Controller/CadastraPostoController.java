@@ -23,7 +23,7 @@ public class CadastraPostoController {
     
     
     
-    public void cadastra_posto(String cnpj, String social, String fantasia, String bandeira, String endereco, String bairro, String imagem, String cep){
+    public void cadastra_posto(String cnpj, String social, String fantasia, String bandeira, String endereco, String bairro, String cep, String imagem){
         Posto novo_posto = new Posto();
         novo_posto.set_cnpj(cnpj);
         novo_posto.set_razao_social(social);

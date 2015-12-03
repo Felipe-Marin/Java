@@ -6,30 +6,28 @@
 package Model;
 import java.util.List;
 import java.util.ArrayList;
-import java.io.File;
 
 /**
  *
  * @author Felipe
  */
 public class ListaPostos{
-    private int num_postos;
     private List<Posto> list_postos;
-    File postocsv = new File("posto.csv");
+    private CSVPosto csv;
     
     public ListaPostos(){
-        num_postos = 0;
         list_postos = new ArrayList<Posto>();
+        csv = new CSVPosto();
     }
     
     public void addPosto(Posto posto){
         list_postos.add(posto);
-        num_postos += 1;
+        csv.write_posto(posto);
     }
     
     public void removePosto(Posto posto){
         list_postos.remove(posto);
-        num_postos -= 1;
+        
     }
     
     public void replacePosto(Posto old_posto, Posto new_posto){

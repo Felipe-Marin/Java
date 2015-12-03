@@ -59,6 +59,12 @@ public class CadastraPosto extends javax.swing.JPanel {
         btEditar = new javax.swing.JButton();
         btExcluir = new javax.swing.JButton();
 
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                formComponentShown(evt);
+            }
+        });
+
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastar posto"));
         jPanel1.setToolTipText("");
 
@@ -192,6 +198,11 @@ public class CadastraPosto extends javax.swing.JPanel {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Modificar Posto"));
 
+        listPostos.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                listPostosComponentShown(evt);
+            }
+        });
         jScrollPane1.setViewportView(listPostos);
 
         btEditar.setText("Editar");
@@ -308,6 +319,15 @@ public class CadastraPosto extends javax.swing.JPanel {
         controller.excluir_posto(listPostos.getSelectedValue());
         listPostos.setListData(controller.get_list().toArray());
     }//GEN-LAST:event_btExcluirActionPerformed
+
+    private void listPostosComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_listPostosComponentShown
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listPostosComponentShown
+
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        // TODO add your handling code here:
+        listPostos.setListData(controller.get_list().toArray());
+    }//GEN-LAST:event_formComponentShown
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

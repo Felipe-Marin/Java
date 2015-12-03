@@ -134,5 +134,18 @@ public class Posto{
         Combustivel[] list = new Combustivel[diesel.size()];
         return diesel.toArray(list);
     }
+    
+    public List get_lista_atributos(){
+        List atributos = new ArrayList();
+        atributos.add(cnpj);
+        atributos.add(razao_social);
+        atributos.add(nome_fantasia);
+        atributos.add(bandeira);
+        atributos.add(endereco);
+        atributos.add(bairro);
+        atributos.add(cep);
+        atributos.add(imagem);
+        return atributos;
+    }
 
 }
