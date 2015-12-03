@@ -103,6 +103,24 @@ public class Posto{
         return this.cep;
     }
     
+    public String get_gasolina(){
+        if(this.gasolina.isEmpty())
+            return "";
+        return this.gasolina.get(this.gasolina.size()-1).getPreco();
+    }
+    
+    public String get_etanol(){
+        if(this.etanol.isEmpty())
+            return "";
+        return this.etanol.get(this.etanol.size()-1).getPreco();
+    }
+    
+    public String get_diesel(){
+        if(this.diesel.isEmpty())
+            return "";
+        return this.diesel.get(this.diesel.size()-1).getPreco();
+    }
+    
     @Override
     public String toString(){
         return nome_fantasia;

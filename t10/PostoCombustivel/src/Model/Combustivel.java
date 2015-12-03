@@ -39,6 +39,11 @@ public class Combustivel {
         this.data = data;
     }
     
+    public String getPreco(){
+        String s = String.valueOf(preco);
+        return s;
+    }
+    
     @Override
     public String toString(){
         double  preco_real = preco/100;

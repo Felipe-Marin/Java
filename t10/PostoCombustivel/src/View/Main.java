@@ -37,6 +37,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        panelHistorico = new javax.swing.JDialog();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -61,15 +62,29 @@ public class Main extends javax.swing.JFrame {
         tfEndereco = new javax.swing.JTextField();
         tfBairro = new javax.swing.JTextField();
         tfCep = new javax.swing.JFormattedTextField();
-        tfGasolina = new javax.swing.JTextField();
         tfEtanol = new javax.swing.JTextField();
         tfDiesel = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         panelImage = new javax.swing.JPanel();
         labelImage = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        tfGasolina = new javax.swing.JTextField();
         cadastraCombustivel = new View.CadastrarCombustivel();
         cadastraPosto = new View.CadastraPosto();
+
+        panelHistorico.setTitle("Histórico");
+        panelHistorico.setPreferredSize(new java.awt.Dimension(800, 600));
+
+        javax.swing.GroupLayout panelHistoricoLayout = new javax.swing.GroupLayout(panelHistorico.getContentPane());
+        panelHistorico.getContentPane().setLayout(panelHistoricoLayout);
+        panelHistoricoLayout.setHorizontalGroup(
+            panelHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 877, Short.MAX_VALUE)
+        );
+        panelHistoricoLayout.setVerticalGroup(
+            panelHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 643, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -138,13 +153,16 @@ public class Main extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        tfGasolina.setEditable(false);
-
         tfEtanol.setEditable(false);
 
         tfDiesel.setEditable(false);
 
         jButton2.setText("Histórico de preços");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         panelImage.setBorder(javax.swing.BorderFactory.createTitledBorder("Imagem"));
 
@@ -160,6 +178,8 @@ public class Main extends javax.swing.JFrame {
         );
 
         jLabel13.setText("Diesel:");
+
+        tfGasolina.setEditable(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -179,7 +199,7 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(btBusca)
                         .addGap(0, 72, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,25 +215,31 @@ public class Main extends javax.swing.JFrame {
                                     .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tfCep, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(tfBairro)
-                                        .addComponent(tfEndereco, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(tfBandeira, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(tfNome, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(tfRazao, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
-                                        .addComponent(tfCnpj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(tfGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(tfDiesel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
-                                        .addComponent(tfEtanol, javax.swing.GroupLayout.Alignment.LEADING))))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(tfCep, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(tfBairro)
+                                                .addComponent(tfEndereco, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(tfBandeira, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(tfNome, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(tfRazao, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE)
+                                                .addComponent(tfCnpj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(18, 18, 18))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(tfDiesel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
+                                            .addComponent(tfEtanol))
+                                        .addGap(274, 274, 274))))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(20, 20, 20)
                                 .addComponent(jLabel10)
-                                .addGap(141, 141, 141)
-                                .addComponent(jButton2)))
-                        .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(tfGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                                .addComponent(jButton2)
+                                .addGap(70, 70, 70)))
                         .addComponent(panelImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
@@ -259,8 +285,8 @@ public class Main extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(tfGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(jButton2)
+                    .addComponent(tfGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
@@ -306,6 +332,7 @@ public class Main extends javax.swing.JFrame {
     private void listBuscaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listBuscaValueChanged
         // TODO add your handling code here:
         String[] list = controle_posto.get_selected_list_values(listBusca.getSelectedValue());
+        String[] list_comb = controle_posto.get_selected_list_combustiveis(listBusca.getSelectedValue());
         tfCnpj.setText(list[0]);
         tfNome.setText(list[2]);
         tfRazao.setText(list[1]);
@@ -315,7 +342,16 @@ public class Main extends javax.swing.JFrame {
         tfBairro.setText(list[5]);
         javax.swing.ImageIcon image = new javax.swing.ImageIcon(list[7]);
         labelImage.setIcon(image);
+        tfGasolina.setText(String.format("R$%.2f", Double.valueOf(list_comb[0])/100));
+        tfEtanol.setText(String.format("R$%.2f", Double.valueOf(list_comb[1])/100));
+        tfDiesel.setText(String.format("R$%.2f", Double.valueOf(list_comb[2])/100));
     }//GEN-LAST:event_listBuscaValueChanged
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        panelHistorico.setSize(700, 360);
+        panelHistorico.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -374,6 +410,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JLabel labelImage;
     private javax.swing.JList listBusca;
+    private javax.swing.JDialog panelHistorico;
     private javax.swing.JPanel panelImage;
     private javax.swing.JTextField tfBairro;
     private javax.swing.JTextField tfBandeira;

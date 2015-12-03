@@ -24,12 +24,9 @@ public class CadastrarCombustivelController {
     }
     
     public void add_combustivel(Object ob, String tipo, String data, String preco){
-        System.out.println(data);
-        System.out.println(preco);
         Posto p = (Posto)ob;
         long precol = Long.parseLong(preco);
         Date date = new Date(data);
-        System.out.println(date.toString());
         p.insere_combustivel(date, precol, tipo);
     }
     

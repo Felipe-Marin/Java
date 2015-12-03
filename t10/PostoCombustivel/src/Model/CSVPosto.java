@@ -31,7 +31,7 @@ public class CSVPosto{
     CSVParser csvFileParser = null;
     
     public CSVPosto(){
-        postocsv = new File("C:/CSV/posto.csv");
+        postocsv = new File("posto.csv");
     }
     
     public void write_posto(Posto p){
