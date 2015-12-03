@@ -24,5 +24,9 @@ public class MainController {
         lista_postos.addAll(csv.read_List_postos());
         System.out.println(lista_postos);
     }
+    
+    public void save_postos(){
+        csv.write_all_posto(lista_postos);
+    }
 
 }

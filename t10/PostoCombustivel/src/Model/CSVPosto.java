@@ -19,7 +19,14 @@ public class CSVPosto{
     private static final String NEW_LINE_SEPARATOR = "\n";
     private static final Object [] FILE_HEADER = {"cnpj","razaosocial","nome","bandeira","endereco","bairro","cep","imagem"};
     private static final String[] FILE_HEADER_MAPPING = {"cnpj","razaosocial","nome","bandeira","endereco","bairro","cep","imagem"};
-    
+    private static final String POSTO_CNPJ = "cnpj";
+    private static final String POSTO_RAZAOSOCIAL = "razaosocial";
+    private static final String POSTO_NOME = "nome"; 
+    private static final String POSTO_BANDEIRA = "bandeira";
+    private static final String POSTO_ENDERECO = "endereco";
+    private static final String POSTO_BAIRRO = "bairro";
+    private static final String POSTO_CEP = "cep";
+    private static final String POSTO_IMAGEM = "imagem";   
     CSVPrinter csvFilePrinter = null;
     CSVParser csvFileParser = null;
     
@@ -49,6 +56,32 @@ public class CSVPosto{
         }
     }
     
+    public void write_all_posto(List<Posto> lista_posto){
+        FileWriter fw=null;
+        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator(NEW_LINE_SEPARATOR);
+        try{
+            fw = new FileWriter(postocsv, false);
+            csvFilePrinter = new CSVPrinter(fw, csvFileFormat);
+            csvFilePrinter.printRecord(FILE_HEADER);
+            for(Posto p : lista_posto){
+                System.out.println(p.get_lista_atributos());
+                csvFilePrinter.printRecord(p.get_lista_atributos());
+            }
+            
+        }
+        catch(IOException e){
+            System.out.println("Exception.");
+        } finally{
+            try{
+                fw.flush();
+		fw.close();
+		csvFilePrinter.close();
+            }catch(IOException e){
+		System.out.println("Error fechar arquivo CSV    ");
+            }
+        }
+    }
+    
     public List<Posto> read_List_postos(){
         FileReader fr = null;
         List<Posto> lista = new ArrayList();
@@ -60,14 +93,14 @@ public class CSVPosto{
             for (int i = 1; i < csvRecords.size(); i++){
                 CSVRecord record = csvRecords.get(i);
                 Posto p = new Posto();
-                p.set_cnpj(record.get("cnpj"));
-                p.set_razao_social(record.get("razaosocial"));
-                p.set_nome_fantasia(record.get("nome"));
-                p.set_cnpj(record.get("bandeira"));
-                p.set_cnpj(record.get("endereco"));
-                p.set_cnpj(record.get("bairro"));
-                p.set_cnpj(record.get("cep"));
-                p.set_cnpj(record.get("imagem"));
+                p.set_cnpj(record.get(POSTO_CNPJ));
+                p.set_razao_social(record.get(POSTO_RAZAOSOCIAL));
+                p.set_nome_fantasia(record.get(POSTO_NOME));
+                p.set_bandeira(record.get(POSTO_BANDEIRA));
+                p.set_endereco(record.get(POSTO_ENDERECO));
+                p.set_bairro(record.get(POSTO_BAIRRO));
+                p.set_cep(record.get(POSTO_CEP));
+                p.set_imagem(record.get(POSTO_IMAGEM));
                 lista.add(p);
             }
         }
