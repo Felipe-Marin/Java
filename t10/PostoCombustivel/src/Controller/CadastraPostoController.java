@@ -84,6 +84,24 @@ public class CadastraPostoController {
         return list;
     }
     
+    public Object[] get_selected_list_gasolina(Object ob_posto){
+        Posto posto = (Posto)ob_posto;
+        Combustivel[] list = posto.lista_gasolina();
+        return list;
+    }
+    
+    public Object[] get_selected_list_etanol(Object ob_posto){
+        Posto posto = (Posto)ob_posto;
+        Combustivel[] list = posto.lista_diesel();
+        return list;
+    }
+    
+    public Object[] get_selected_list_diesel(Object ob_posto){
+        Posto posto = (Posto)ob_posto;
+        Combustivel[] list = posto.lista_diesel();
+        return list;
+    }
+    
     public List busca_posto(String bairro){
         return lista_postos.busca_bairro(bairro);
     }

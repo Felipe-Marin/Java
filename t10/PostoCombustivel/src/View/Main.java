@@ -38,6 +38,9 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         panelHistorico = new javax.swing.JDialog();
+        jLabel12 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablePrecos = new javax.swing.JTable();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -75,15 +78,78 @@ public class Main extends javax.swing.JFrame {
         panelHistorico.setTitle("Histórico");
         panelHistorico.setPreferredSize(new java.awt.Dimension(800, 600));
 
+        jLabel12.setText("Histórico de preços");
+
+        tablePrecos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Gasolina", "Etanol", "Diesel"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(tablePrecos);
+
         javax.swing.GroupLayout panelHistoricoLayout = new javax.swing.GroupLayout(panelHistorico.getContentPane());
         panelHistorico.getContentPane().setLayout(panelHistoricoLayout);
         panelHistoricoLayout.setHorizontalGroup(
             panelHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 877, Short.MAX_VALUE)
+            .addGroup(panelHistoricoLayout.createSequentialGroup()
+                .addGap(349, 349, 349)
+                .addComponent(jLabel12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelHistoricoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 780, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelHistoricoLayout.setVerticalGroup(
             panelHistoricoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 643, Short.MAX_VALUE)
+            .addGroup(panelHistoricoLayout.createSequentialGroup()
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -351,6 +417,22 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         panelHistorico.setSize(700, 360);
         panelHistorico.setVisible(true);
+        int i = 0;
+        for(Object ob: controle_posto.get_selected_list_gasolina(listBusca.getSelectedValue())){
+            tablePrecos.setValueAt(ob, i, 0);
+            i++;
+        }
+        i = 0;
+        for(Object ob: controle_posto.get_selected_list_etanol(listBusca.getSelectedValue())){
+            tablePrecos.setValueAt(ob, i, 1);
+            i++;
+        }
+        i = 0;
+        for(Object ob: controle_posto.get_selected_list_diesel(listBusca.getSelectedValue())){
+            tablePrecos.setValueAt(ob, i, 2);
+            i++;
+        }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -396,6 +478,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -407,11 +490,13 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JLabel labelImage;
     private javax.swing.JList listBusca;
     private javax.swing.JDialog panelHistorico;
     private javax.swing.JPanel panelImage;
+    private javax.swing.JTable tablePrecos;
     private javax.swing.JTextField tfBairro;
     private javax.swing.JTextField tfBandeira;
     private javax.swing.JTextField tfBusca;
