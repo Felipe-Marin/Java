@@ -27,6 +27,7 @@ public class CSVPosto{
     private static final String POSTO_BAIRRO = "bairro";
     private static final String POSTO_CEP = "cep";
     private static final String POSTO_IMAGEM = "imagem";   
+    private static final Object [] FILE_HEADER_COMBUSTIVEL = {"gasolina","etanol","diesel"};
     CSVPrinter csvFilePrinter = null;
     CSVParser csvFileParser = null;
     
@@ -127,4 +128,30 @@ public class CSVPosto{
             
         }
     }
+    
+    public void write_all_combustivel(List<Posto> lista_posto){
+        FileWriter fw=null;
+        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator(NEW_LINE_SEPARATOR);
+        try{
+            fw = new FileWriter(postocsv, false);
+            csvFilePrinter = new CSVPrinter(fw, csvFileFormat);
+            csvFilePrinter.printRecord(FILE_HEADER_COMBUSTIVEL);
+            for(Posto p : lista_posto){
+                csvFilePrinter.printRecord(p.get_lista_atributos());
+            }
+            
+        }
+        catch(IOException e){
+            System.out.println("Exception.");
+        } finally{
+            try{
+                fw.flush();
+		fw.close();
+		csvFilePrinter.close();
+            }catch(IOException e){
+		System.out.println("Error fechar arquivo CSV    ");
+            }
+        }
+    }
+    
 }
