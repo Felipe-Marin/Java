@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/sudoku/Main.java</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/sudoku/AllStepsPanel.java</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/intl/MainFrame.properties</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/sudoku/MainFrame.java</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/sudoku/SudokuPanel.java</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/src/sudoku/ListDragAndDrop.java</file>
-            <file>file:/C:/Users/Felipe/Documents/GitHub/Java/qualidade/HoDoKu/trunk/test/sudoku/SudokuPanelTest.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
