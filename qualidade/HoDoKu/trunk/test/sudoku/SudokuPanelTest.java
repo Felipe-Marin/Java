@@ -115,8 +115,7 @@ public class SudokuPanelTest {
         panel.setSudoku(sudoku);
         panel.solveUpTo();
         String grid = panel.getSudokuString(ClipboardMode.VALUES_ONLY);
-        System.out.println(grid);
-        assertTrue(VerificaSudoku.linhas(grid) && VerificaSudoku.colunas(grid) && VerificaSudoku.quadrados(grid));
+        assertTrue(VerificaSudoku.linhas(grid) && VerificaSudoku.colunas(grid) && VerificaSudoku.quadrados(grid) && VerificaSudoku.soNumeros(grid));
            
         
     }

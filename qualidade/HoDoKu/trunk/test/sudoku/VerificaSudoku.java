@@ -20,7 +20,7 @@ public class VerificaSudoku {
     public static boolean linhas(String sudoku){
         int lineStart = 0;
         int lineEnd = 8;
-        boolean falha = true;
+        boolean sucesso = true;
         char[] sudokuArray = sudoku.toCharArray();
         for(int i=0; i<9; i++){
             //Teste das linhas buscando por valores repetidos
@@ -28,14 +28,14 @@ public class VerificaSudoku {
                 for(int h=j; h<lineEnd; h++){
                     if(sudokuArray[h]!='.')
                         if(sudokuArray[h] == sudokuArray[h+1]){
-                            falha = false;
+                            sucesso = false;
                         }
                 }                
             }
             lineStart += 9;
             lineEnd += 9;
         }
-        return falha;
+        return sucesso;
     }
     
     //Testa as 9 colunas do sudoku
@@ -43,7 +43,7 @@ public class VerificaSudoku {
         int columnStart = 0;
         int columnEnd = 81;
         int lineEnd = 8;
-        boolean falha = true;
+        boolean sucesso = true;
         char[] sudokuArray = sudoku.toCharArray();
         for(int i=0; i<9; i++){
             //Teste das colunas buscando por valores repetidos
@@ -51,7 +51,7 @@ public class VerificaSudoku {
                 for(int h=j; h<lineEnd; h+=9){
                     if(sudokuArray[h]!='.'){
                         if(sudokuArray[h] == sudokuArray[h+9]){
-                            falha = false;
+                            sucesso = false;
                         }
                     }
                 }                
@@ -60,12 +60,12 @@ public class VerificaSudoku {
             columnStart++;
             columnEnd++;
         }
-        return falha;
+        return sucesso;
     }
     
     //Testa os 9 quadrados de 3x3 do Sudoku
     public static boolean quadrados(String sudoku){
-        boolean falha = true;
+        boolean sucesso = true;
         char[] sudokuArray = sudoku.toCharArray();
         int[] q1 = {0, 1, 2, 9, 10, 11, 18, 19, 20};
         int[] q2 = {27,28,29,36,37,38,45,46,47};
@@ -74,7 +74,7 @@ public class VerificaSudoku {
             for(int i=0; i<8; i++){
                for(int j = i+1; j<9; j++){
                    if(sudokuArray[q1[i]] != '.' && sudokuArray[q1[i]] == sudokuArray[q1[j]])
-                        falha = false;
+                        sucesso = false;
                 }
             }
             for(int i=0; i<q1.length; i++){
@@ -83,7 +83,7 @@ public class VerificaSudoku {
             for(int i=0; i<8; i++){
                for(int j = i+1; j<9; j++){
                     if(sudokuArray[q2[i]] != '.' && sudokuArray[q2[i]] == sudokuArray[q2[j]])
-                        falha = false;
+                        sucesso = false;
                 }
             }
             for(int i=0; i<q2.length; i++){
@@ -92,7 +92,7 @@ public class VerificaSudoku {
             for(int i=0; i<8; i++){
                for(int j = i+1; j<9; j++){
                     if(sudokuArray[q3[i]] != '.' && sudokuArray[q3[i]] == sudokuArray[q3[j]])
-                        falha = false;
+                        sucesso = false;
                 }
             }
             for(int i=0; i<q3.length; i++){
@@ -100,8 +100,17 @@ public class VerificaSudoku {
             }
         
         }
-        return falha;
+        return sucesso;
     }
     
+    public static boolean soNumeros(String sudoku){
+        boolean sucesso = true;
+        char[] sudokuArray = sudoku.toCharArray();
+        for(char c : sudokuArray){
+            if(c<'1' || c>'9')
+                sucesso= false;
+        }
+        return sucesso;
+    }
     
 }

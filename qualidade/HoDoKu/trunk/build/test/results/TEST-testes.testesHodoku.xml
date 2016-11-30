@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Felipe-PC" name="testes.testesHodoku" skipped="0" tests="5" time="9.158" timestamp="2016-11-30T02:46:02">
+<testsuite errors="0" failures="0" hostname="Felipe-notebook" name="testes.testesHodoku" skipped="0" tests="5" time="9.789" timestamp="2016-11-30T11:11:16">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="BR" />
@@ -14,7 +14,7 @@
     <property name="libs.jsp-compilation.javadoc" value="" />
     <property name="user.dir" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk" />
     <property name="libs.javaee-api-7.0.src" value="" />
-    <property name="java.vm.version" value="25.60-b23" />
+    <property name="java.vm.version" value="25.51-b03" />
     <property name="libs.DataBindingME.classpath" value="C:\Program Files\NetBeans 8.0.2\mobility\modules\ext\netbeans_databindingme.jar" />
     <property name="libs.j2me_common_ant.src" value="" />
     <property name="libs.MySQLDriver.classpath" value="C:\Program Files\NetBeans 8.0.2\ide\modules\ext\mysql-connector-java-5.1.23-bin.jar" />
@@ -24,7 +24,7 @@
     <property name="libs.javaee-web-api-6.0.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\javaee-web-api-6.0.jar" />
     <property name="libs.DataBindingME-PIM.maven-pom" value="" />
     <property name="javac.profile.cmd.line.arg" value="" />
-    <property name="jdk.home" value="C:\Program Files\Java\jdk1.8.0_60" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk1.8.0_51" />
     <property name="libs.javac-api.src" value="" />
     <property name="javadoc.noindex" value="false" />
     <property name="libs.jpa2-persistence.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\hibernate4\hibernate-jpa-2.1-api-1.0.0.Final.jar" />
@@ -37,7 +37,7 @@
     <property name="have.tests" value="true" />
     <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
     <property name="libs.javac-api.javadoc" value="" />
-    <property name="os.name" value="Windows 10" />
+    <property name="os.name" value="Windows 8.1" />
     <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="libs.javaee-endorsed-api-7.0.maven-pom" value="" />
     <property name="ap.proc.none.internal" value="" />
@@ -47,6 +47,7 @@
     <property name="jnlp.signing.keystore" value="" />
     <property name="libs.jstl.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jstl-impl.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jstl-api.jar" />
     <property name="libs.testng.src" value="" />
+    <property name="nu.validator.spec.alt-advice" value="jar:file:/C:/Program%20Files/NetBeans%208.0.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_Validator_nu_alt_advice" />
     <property name="libs.spring-webmvc3.0.src" value="" />
     <property name="libs.restapi.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jaxrs-2.0\javax.ws.rs-api-2.0.jar" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
@@ -59,7 +60,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.testesHodoku skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\results\TEST-testes.testesHodoku.xml crashfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junitvmwatcher703032427045348192.properties propsfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junit5744711310770440785.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.testesHodoku skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\results\TEST-testes.testesHodoku.xml crashfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junitvmwatcher5670033438706888881.properties propsfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junit7719307126943488933.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="jnlp.descriptor" value="application" />
@@ -81,7 +82,7 @@
     <property name="build.compiler.emacs" value="true" />
     <property name="libs.javaee-web-api-6.0.src" value="" />
     <property name="libs.jsp-compilation-syscp.classpath" value="C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jstl-impl.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\endorsed" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\endorsed" />
     <property name="libs.groovy-all.src" value="" />
     <property name="test.includes" value="testes/testesHodoku.java" />
     <property name="netbeans.dynamic.classpath" value="C:\Program Files\NetBeans 8.0.2\platform\core\core.jar;C:\Program Files\NetBeans 8.0.2\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files\NetBeans 8.0.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 8.0.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 8.0.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
@@ -102,7 +103,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\null1761786744" />
+    <property name="javac.includesfile.binary" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\null139609989" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar" />
@@ -117,14 +118,13 @@
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 8.0.2\ide\docs\jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\antlr-2.7.2.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\bsf-2.3.0.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-beanutils-1.8.0.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-chain-1.2.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-digester-1.8.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-fileupload-1.1.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-io-1.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-logging-1.0.4.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\commons-validator-1.3.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\jstl-1.0.2.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\oro-2.0.8.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\standard-1.0.6.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-core-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-el-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-extras-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-faces-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-scripting-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-taglib-1.3.10.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\struts\struts-tiles-1.3.10.jar" />
-    <property name="org.openide.awt.SwingBrowserImpl.do-not-block-awt" value="false" />
     <property name="javac.includes.binary" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\classes\testes\testesHodoku.class" />
     <property name="ant.home" value="C:\Program Files\NetBeans 8.0.2\extide\ant" />
     <property name="libs.junit_4.src" value="C:\Program Files\NetBeans 8.0.2\java\docs\junit-4.10-sources.jar" />
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans 8.0.2\platform\modules\ext\testng-6.8.1-dist.jar" />
     <property name="libs.absolutelayout.maven-pom" value="" />
     <property name="ant.java.version" value="1.8" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\programdata\oracle\java\javapath;c:\program files\haskell\bin;c:\program files\haskell platform\7.10.2-a\lib\extralibs\bin;c:\program files\haskell platform\7.10.2-a\bin;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\intel\intel(r) management engine components\ipt;c:\program files\haskell platform\7.10.2-a\mingw\bin;c:\program files (x86)\skype\phone\;c:\program files (x86)\gtksharp\2.12\bin;c:\windows\system32\config\systemprofile\.dnx\bin;c:\program files\microsoft dnx\dnvm\;c:\program files (x86)\common files\acronis\snapapi\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\Felipe\AppData\Roaming\cabal\bin;C:\Users\Felipe\AppData\Local\Microsoft\WindowsApps;C:\Users\Felipe\AppData\Roaming\npm;." />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\7.10.2-a\lib\extralibs\bin;C:\Program Files\Haskell Platform\7.10.2-a\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Samsung\AllShare Framework DMS\1.3.20\;C:\Program Files\Samsung\AllShare Framework DMS\1.3.20\64bit\;C:\Program Files\Haskell Platform\7.10.2-a\mingw\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Users\Felipe\AppData\Roaming\cabal\bin;." />
     <property name="javadoc.author" value="false" />
     <property name="libs.metro.maven-pom" value="" />
     <property name="ant.file.HoDoKu" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build.xml" />
@@ -159,9 +159,10 @@
     <property name="sun.java2d.dpiaware" value="true" />
     <property name="libs.hibernate4-persistence.maven-pom" value="" />
     <property name="libs.DataBindingME-SVG.classpath" value="C:\Program Files\NetBeans 8.0.2\mobility\modules\ext\netbeans_databindingme_svg.jar" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|Felipe-notebook" />
     <property name="libs.PostgreSQLDriver.maven-pom" value="" />
     <property name="java.class.version" value="52.0" />
-    <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="C:\Program Files\Java\jdk1.8.0_60\db\lib\derby.jar;C:\Program Files\Java\jdk1.8.0_60\db\lib\derbyclient.jar;C:\Program Files\Java\jdk1.8.0_60\db\lib\derbynet.jar" />
+    <property name="libs.JAVADB_DRIVER_LABEL.classpath" value="C:\Program Files\Java\jdk1.8.0_51\db\lib\derby.jar;C:\Program Files\Java\jdk1.8.0_51\db\lib\derbyclient.jar;C:\Program Files\Java\jdk1.8.0_51\db\lib\derbynet.jar" />
     <property name="libs.hibernate4-persistencemodelgen.maven-pom" value="" />
     <property name="libs.javaee-endorsed-api-6.0.src" value="" />
     <property name="libs.eclipselink.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
@@ -182,7 +183,7 @@
     <property name="libs.hibernate4-persistencemodelgen.src" value="" />
     <property name="javadoc.preview" value="true" />
     <property name="libs.jpa20-persistence.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_60\jre" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_51\jre" />
     <property name="libs.jsp-compilation.src" value="" />
     <property name="debug.test.classpath" value=":build/classes:C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar:build/test/classes" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
@@ -197,6 +198,7 @@
     <property name="libs.restlib.classpath" value="C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\asm-all-repackaged-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\cglib-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\guava-14.0.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\hk2-api-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\hk2-locator-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\hk2-utils-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\javax.annotation-api-1.2.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\javax.inject-2.2.0-b21.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\javax.servlet-api-3.0.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\jaxb-api-2.2.7.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\jersey-entity-filtering-2.5.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\jersey-media-moxy-2.5.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\org.osgi.core-4.2.0.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\osgi-resource-locator-1.0.1.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\persistence-api-1.0.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\ext\validation-api-1.1.0.Final.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\jersey-client.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\jersey-common.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\jersey-container-servlet.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\jersey-container-servlet-core.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\jersey2\jersey-server.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\eclipselink.jar" />
     <property name="libs.MySQLDriver.maven-pom" value="" />
     <property name="libs.hibernate4-persistence.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|Felipe-notebook" />
     <property name="libs.junit_4.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\docs\junit-4.10-javadoc.jar" />
     <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
     <property name="run.classpath" value=":build/classes" />
@@ -241,7 +243,7 @@
     <property name="junit.available" value="true" />
     <property name="ant.file.type.HoDoKu-impl" value="file" />
     <property name="libs.jsp-compiler.src" value="" />
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin" />
     <property name="have.sources" value="true" />
     <property name="debug.classpath" value=":build/classes" />
     <property name="javadoc.private" value="true" />
@@ -256,7 +258,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.file.type.HoDoKu" value="file" />
     <property name="ant.project.name" value="HoDoKu" />
-    <property name="netbeans.hash.code" value="unique=NB_CND_EXTIDE_GFMOD_GROOVY_JAVA_JC_MOB_PHP_WEBCOMMON_WEBEE0b6dcf5fa-dfb0-4a7c-a8b2-797e968b9bb2_3c9638c6-d4bc-4b28-a514-eed2b0c591b8" />
+    <property name="netbeans.hash.code" value="unique=NB_CND_EXTIDE_GFMOD_GROOVY_JAVA_JC_MOB_PHP_WEBCOMMON_WEBEE07bc8e8b8-1d50-4571-8620-e511d95a204d_285f4751-f73a-4f20-bbed-b6cdba46ea67" />
     <property name="netbeans.default_userdir_root" value="C:\Users\Felipe\AppData\Roaming\NetBeans" />
     <property name="libs.jsp-compilation-syscp.maven-pom" value="" />
     <property name="sun.cpu.isalist" value="amd64" />
@@ -273,18 +275,19 @@
     <property name="jar.index" value="false" />
     <property name="libs.CopyLibs.maven-pom" value="" />
     <property name="libs.spring-framework300.javadoc" value="" />
-    <property name="libs.absolutelayout.javadoc" value="C:\Users\Felipe\Documents\commons-csv-1.2\apidocs" />
+    <property name="libs.absolutelayout.javadoc" value="" />
     <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="nu.validator.spec.microsyntax-descriptions" value="jar:file:/C:/Program%20Files/NetBeans%208.0.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_MicrosyntaxDescriptions" />
     <property name="do.archive+main.class.available" value="true" />
     <property name="jnlp.mixed.code" value="default" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="libs.javac-api.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\nb-javac-api.jar" />
-    <property name="java.version" value="1.8.0_60" />
+    <property name="java.version" value="1.8.0_51" />
     <property name="run.jvmargs.ide" value="" />
     <property name="javadoc.version" value="false" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
-    <property name="platform.java" value="C:\Program Files\Java\jdk1.8.0_60\jre/bin/java" />
+    <property name="platform.java" value="C:\Program Files\Java\jdk1.8.0_51\jre/bin/java" />
     <property name="source.encoding" value="UTF-8" />
     <property name="ap.cmd.line.internal" value="" />
     <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
@@ -307,26 +310,26 @@
     <property name="libs.swing-layout.classpath" value="C:\Program Files\NetBeans 8.0.2\platform\modules\ext\swing-layout-1.0.4.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
     <property name="libs.restlib.src" value="" />
-    <property name="javac.source" value="1.6" />
     <property name="build.generated.dir" value="build/generated" />
+    <property name="javac.source" value="1.6" />
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="java.specification.version" value="1.8" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="libs.jaxws21.maven-pom" value="" />
     <property name="nb.junit.batch" value="true" />
     <property name="junit.forkmode" value="perTest" />
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\classes" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_51\jre\classes" />
     <property name="javac.target" value="1.6" />
     <property name="built-jar.properties" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\built-jar.properties" />
     <property name="build.test.classes.dir" value="build/test/classes" />
     <property name="src.dir" value="src" />
-    <property name="libs.jpa2-persistence.src" value="" />
     <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="libs.jpa2-persistence.src" value="" />
     <property name="annotation.processing.enabled" value="true" />
     <property name="libs.jsf20.src" value="" />
     <property name="libs.jpa20-persistence.src" value="" />
-    <property name="libs.jsf12.src" value="" />
     <property name="libs.DataBindingME-SVG.maven-pom" value="" />
+    <property name="libs.jsf12.src" value="" />
     <property name="libs.JAVADB_DRIVER_LABEL.maven-pom" value="" />
     <property name="libs.struts.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\struts-1.3.10-javadoc.zip" />
     <property name="libs.javaee-web-api-7.0.src" value="" />
@@ -334,39 +337,39 @@
     <property name="dist.dir" value="dist" />
     <property name="libs.groovy-all.javadoc" value="" />
     <property name="testng.debug.mode" value="" />
-    <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans 8.0.2\groovy\modules\ext\groovy-all.jar" />
     <property name="javac.fork" value="false" />
+    <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans 8.0.2\groovy\modules\ext\groovy-all.jar" />
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
     <property name="default.javac.source" value="1.8" />
     <property name="debug-transport-by-os" value="dt_shmem" />
-    <property name="libs.MySQLDriver.src" value="" />
     <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="libs.MySQLDriver.src" value="" />
     <property name="build.test.results.dir" value="build/test/results" />
-    <property name="java.runtime.version" value="1.8.0_60-b27" />
+    <property name="java.runtime.version" value="1.8.0_51-b16" />
     <property name="default.javac.target" value="1.8" />
     <property name="libs.junit_4.classpath" value="C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar" />
-    <property name="user.timezone" value="" />
+    <property name="user.timezone" value="America/Sao_Paulo" />
     <property name="nb.junit.single" value="false" />
     <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="libs.JAVADB_DRIVER_LABEL.javadoc" value="" />
     <property name="netbeans.dirs" value="C:\Program Files\NetBeans 8.0.2\nb;C:\Program Files\NetBeans 8.0.2\ergonomics;C:\Program Files\NetBeans 8.0.2\ide;C:\Program Files\NetBeans 8.0.2\extide;C:\Program Files\NetBeans 8.0.2\java;C:\Program Files\NetBeans 8.0.2\apisupport;C:\Program Files\NetBeans 8.0.2\webcommon;C:\Program Files\NetBeans 8.0.2\websvccommon;C:\Program Files\NetBeans 8.0.2\enterprise;C:\Program Files\NetBeans 8.0.2\mobility;C:\Program Files\NetBeans 8.0.2\profiler;C:\Program Files\NetBeans 8.0.2\python;C:\Program Files\NetBeans 8.0.2\php;C:\Program Files\NetBeans 8.0.2\identity;C:\Program Files\NetBeans 8.0.2\harness;C:\Program Files\NetBeans 8.0.2\cnd;C:\Program Files\NetBeans 8.0.2\dlight;C:\Program Files\NetBeans 8.0.2\groovy;C:\Program Files\NetBeans 8.0.2\extra;C:\Program Files\NetBeans 8.0.2\javacard;C:\Program Files\NetBeans 8.0.2\javafx" />
-    <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
     <property name="libs.jstl.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
     <property name="libs.metro.src" value="" />
     <property name="endorsed.classpath" value="" />
-    <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\AbsoluteLayout.jar;C:\Users\Felipe\Documents\commons-csv-1.2\commons-csv-1.2.jar" />
+    <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\AbsoluteLayout.jar" />
     <property name="excludes" value="" />
     <property name="libs.metro.classpath" value="C:\Program Files\NetBeans 8.0.2\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\metro\webservices-api.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\metro\webservices-extra-api.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\metro\webservices-extra.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\metro\webservices-rt.jar;C:\Program Files\NetBeans 8.0.2\enterprise\modules\ext\metro\webservices-tools.jar" />
     <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.jpa2-persistence.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\docs\javax.persistence-2.1.0-doc.zip" />
     <property name="libs.DataBindingME.javadoc" value="C:\Program Files\NetBeans 8.0.2\mobility\modules\docs\netbeans_databindingme-api.zip" />
-    <property name="java.class.path" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\classes;C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar;C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\classes;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-junit4.jar" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\classes;C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar;C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\classes;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.0.2\extide\ant\lib\ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.jpa20-persistence.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar" />
-    <property name="os.version" value="10.0" />
+    <property name="os.version" value="6.3" />
     <property name="application.args" value="" />
     <property name="libs.javaee-api-7.0.maven-pom" value="" />
     <property name="main.class.available" value="true" />
@@ -377,10 +380,10 @@
     <property name="libs.restlib.javadoc" value="" />
     <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans 8.0.2\ide\modules\ext\jaxb\api\jaxb-api.jar" />
     <property name="nb.internal.action.name" value="run.single" />
-    <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\eclipselink.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
     <property name="libs.javaee-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\eclipselink.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\javax.persistence_2.1.0.v201304241213.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" />
     <property name="libs.beans-binding.javadoc" value="C:\Program Files\NetBeans 8.0.2\java\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="libs.CopyLibs.classpath" value="C:\Program Files\NetBeans 8.0.2\java\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
     <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans 8.0.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-aop-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-aspects-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-beans-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-build-src-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-context-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-context-support-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-core-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-expression-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-framework-bom-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-instrument-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-jdbc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-jms-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-orm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-oxm-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-struts-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-test-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-tx-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-web-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-webmvc-3.2.7.RELEASE.jar;C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.7.RELEASE.jar" />
@@ -405,189 +408,117 @@
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
     <property name="build.classes.excludes" value="**/*.java,**/*.form" />
     <property name="file.encoding" value="Cp1252" />
-    <property name="javadoc.nonavbar" value="false" />
     <property name="jdkBug6558476" value="false" />
+    <property name="javadoc.nonavbar" value="false" />
     <property name="libs.spring-webmvc4.0.classpath" value="C:\Program Files\NetBeans 8.0.2\java\modules\ext\spring-4\spring-webmvc-4.0.1.RELEASE.jar" />
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="generator.BackgroundGeneratorTest" name="testGenerate_DifficultyLevel_GameMode" time="1.619" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testRedo" time="2.959" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testSolveUpTo" time="0.824" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testUndo" time="1.25" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testRedo2" time="2.439" />
+  <testcase classname="generator.BackgroundGeneratorTest" name="testGenerate_DifficultyLevel_GameMode" time="2.297" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testSolveUpTo" time="4.079" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testRedo2" time="2.085" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testUndo" time="0.672" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testRedo" time="0.547" />
   <system-out><![CDATA[generate
+fillTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1450 Implikationen (14 max)
+expandTables(): 47ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9546 Implikationen (143 max)
+checkNiceLoops(): 0ms
+fillTables(): 31ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1350 Implikationen (15 max)
+expandTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7533 Implikationen (132 max)
+checkNiceLoops(): 16ms
+917584362324967581568312794672439158153278946849156273735841629281695437496723815
+fillTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 900 Implikationen (11 max)
+expandTables(): 47ms
+Tables: 810 onTableEntries, 810 offTableEntries, 14706 Implikationen (154 max)
+checkNiceLoops(): 16ms
 fillTables(): 10ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1796 Implikationen (17 max)
-expandTables(): 14ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9877 Implikationen (132 max)
-checkNiceLoops(): 10ms
-fillTables(): 13ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1096 Implikationen (13 max)
-expandTables(): 9ms
-Tables: 810 onTableEntries, 810 offTableEntries, 11532 Implikationen (134 max)
-checkNiceLoops(): 8ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1790 Implikationen (16 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9008 Implikationen (128 max)
-checkNiceLoops(): 3ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1266 Implikationen (14 max)
-expandTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10896 Implikationen (142 max)
-checkNiceLoops(): 3ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 2222 Implikationen (19 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9103 Implikationen (120 max)
-checkNiceLoops(): 3ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1966 Implikationen (18 max)
+expandTables(): 56ms
+Tables: 810 onTableEntries, 810 offTableEntries, 14270 Implikationen (151 max)
+checkNiceLoops(): 24ms
 fillTables(): 9ms
-Tables: 810 onTableEntries, 810 offTableEntries, 706 Implikationen (11 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 908 Implikationen (12 max)
+expandTables(): 14ms
+Tables: 810 onTableEntries, 810 offTableEntries, 13713 Implikationen (136 max)
+checkNiceLoops(): 28ms
+fillTables(): 9ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1466 Implikationen (16 max)
 expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 6037 Implikationen (112 max)
-checkNiceLoops(): 7ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1360 Implikationen (14 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10309 Implikationen (136 max)
-checkNiceLoops(): 1ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 410 Implikationen (9 max)
-expandTables(): 1ms
-Tables: 810 onTableEntries, 810 offTableEntries, 2155 Implikationen (70 max)
-checkNiceLoops(): 1ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1890 Implikationen (18 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10654 Implikationen (132 max)
-checkNiceLoops(): 1ms
-126857493579314628843692157495271836617538249238469571961745382784123965352986714
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1332 Implikationen (15 max)
-expandTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 17422 Implikationen (173 max)
-checkNiceLoops(): 4ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1058 Implikationen (12 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 7330 Implikationen (125 max)
-checkNiceLoops(): 1ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1018 Implikationen (14 max)
-expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 12265 Implikationen (150 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 6889 Implikationen (100 max)
 checkNiceLoops(): 2ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1122 Implikationen (16 max)
-expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 11969 Implikationen (150 max)
-checkNiceLoops(): 2ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1344 Implikationen (16 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9312 Implikationen (137 max)
-checkNiceLoops(): 2ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1096 Implikationen (13 max)
-expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 14163 Implikationen (140 max)
-buildChain() START (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
-added to chain: NORMAL_NODE/[r7c1]/false/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
-added to chain: NORMAL_NODE/[r7c4]/true/8 - false (Table: NORMAL_NODE/[r7c4]/true/8)
-added to chain: NORMAL_NODE/[r7c4]/false/3 - false (Table: NORMAL_NODE/[r7c4]/false/3)
-added to chain: NORMAL_NODE/[r5c4]/true/3 - false (Table: NORMAL_NODE/[r5c4]/true/3)
-added to chain: NORMAL_NODE/[r5c4]/false/6 - false (Table: NORMAL_NODE/[r5c4]/false/6)
-added to chain: NORMAL_NODE/[r3c4]/true/6 - false (Table: NORMAL_NODE/[r3c4]/true/6)
-added to chain: NORMAL_NODE/[r1c5]/false/6 - false (Table: NORMAL_NODE/[r1c5]/false/6)
-added to chain: NORMAL_NODE/[r1c9]/true/6 - false (Table: NORMAL_NODE/[r1c9]/true/6)
-added to chain: NORMAL_NODE/[r1c9]/false/8 - false (Table: NORMAL_NODE/[r1c9]/false/8)
-added to chain: NORMAL_NODE/[r8c9]/true/8 - false (Table: NORMAL_NODE/[r8c9]/true/8)
-added to chain: NORMAL_NODE/[r8c7]/false/8 - false (Table: NORMAL_NODE/[r8c7]/false/8)
-added to chain: NORMAL_NODE/[r8c7]/true/3 - false (Table: NORMAL_NODE/[r8c7]/true/3)
-added to chain: NORMAL_NODE/[r5c7]/false/3 - false (Table: NORMAL_NODE/[r5c7]/false/3)
-added to chain: NORMAL_NODE/[r5c7]/true/4 - false (Table: NORMAL_NODE/[r5c7]/true/4)
-added to chain: NORMAL_NODE/[r5c5]/false/4 - false (Table: NORMAL_NODE/[r5c5]/false/4)
-added to chain: NORMAL_NODE/[r5c5]/true/2 - false (Table: NORMAL_NODE/[r5c5]/true/2)
-added to chain: NORMAL_NODE/[r5c6]/false/2 - false (Table: NORMAL_NODE/[r5c6]/false/2)
-added to chain: NORMAL_NODE/[r5c6]/true/7 - false (Table: NORMAL_NODE/[r5c6]/true/7)
-added to chain: NORMAL_NODE/[r5c3]/false/7 - false (Table: NORMAL_NODE/[r5c3]/false/7)
-added to chain: NORMAL_NODE/[r2c3]/true/7 - false (Table: NORMAL_NODE/[r2c3]/true/7)
-added to chain: NORMAL_NODE/[r2c3]/false/9 - false (Table: NORMAL_NODE/[r2c3]/false/9)
-added to chain: NORMAL_NODE/[r7c3]/true/9 - false (Table: NORMAL_NODE/[r7c3]/true/9)
-added to chain: NORMAL_NODE/[r7c1]/false/9 - false (Table: NORMAL_NODE/[r7c1]/false/9)
-added to chain: NORMAL_NODE/[r7c1]/true/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
-buildChain() END (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
-checkNiceLoops(): 4ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1860 Implikationen (15 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 13390 Implikationen (166 max)
-checkNiceLoops(): 1ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1440 Implikationen (15 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 7372 Implikationen (118 max)
-checkNiceLoops(): 1ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1624 Implikationen (16 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8418 Implikationen (134 max)
-checkNiceLoops(): 1ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 930 Implikationen (12 max)
-expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10507 Implikationen (139 max)
-checkNiceLoops(): 3ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1462 Implikationen (16 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 7015 Implikationen (98 max)
+fillTables(): 10ms
+Tables: 810 onTableEntries, 810 offTableEntries, 2162 Implikationen (21 max)
+expandTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10839 Implikationen (127 max)
 checkNiceLoops(): 0ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1244 Implikationen (15 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10057 Implikationen (151 max)
-checkNiceLoops(): 1ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1604 Implikationen (18 max)
-expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8754 Implikationen (146 max)
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1044 Implikationen (15 max)
+expandTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 6807 Implikationen (123 max)
 checkNiceLoops(): 0ms
-fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 752 Implikationen (11 max)
-expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10438 Implikationen (132 max)
-buildChain() START (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
-added to chain: NORMAL_NODE/[r7c1]/false/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
-added to chain: NORMAL_NODE/[r8c2]/true/8 - false (Table: NORMAL_NODE/[r8c2]/true/8)
-added to chain: NORMAL_NODE/[r6c2]/false/8 - false (Table: NORMAL_NODE/[r6c2]/false/8)
-added to chain: NORMAL_NODE/[r6c2]/true/6 - false (Table: NORMAL_NODE/[r6c2]/true/6)
-added to chain: NORMAL_NODE/[r6c6]/false/6 - false (Table: NORMAL_NODE/[r6c6]/false/6)
-added to chain: NORMAL_NODE/[r4c6]/true/6 - false (Table: NORMAL_NODE/[r4c6]/true/6)
-added to chain: NORMAL_NODE/[r4c6]/false/3 - false (Table: NORMAL_NODE/[r4c6]/false/3)
-added to chain: NORMAL_NODE/[r4c1]/true/3 - false (Table: NORMAL_NODE/[r4c1]/true/3)
-added to chain: NORMAL_NODE/[r5c1]/false/3 - false (Table: NORMAL_NODE/[r5c1]/false/3)
-added to chain: NORMAL_NODE/[r5c1]/true/2 - false (Table: NORMAL_NODE/[r5c1]/true/2)
-added to chain: NORMAL_NODE/[r3c1]/false/2 - false (Table: NORMAL_NODE/[r3c1]/false/2)
-added to chain: NORMAL_NODE/[r3c1]/true/9 - false (Table: NORMAL_NODE/[r3c1]/true/9)
-added to chain: NORMAL_NODE/[r7c1]/false/9 - false (Table: NORMAL_NODE/[r7c1]/false/9)
-added to chain: NORMAL_NODE/[r7c1]/true/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
-buildChain() END (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
-checkNiceLoops(): 3ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1410 Implikationen (17 max)
-expandTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 16813 Implikationen (168 max)
-checkNiceLoops(): 1ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1662 Implikationen (18 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 12021 Implikationen (145 max)
-checkNiceLoops(): 1ms
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 882 Implikationen (13 max)
+expandTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 5180 Implikationen (96 max)
+fillTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1780 Implikationen (15 max)
+expandTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 5552 Implikationen (83 max)
+checkNiceLoops(): 0ms
+checkNiceLoops(): 15ms
+fillTables(): 47ms
+Tables: 810 onTableEntries, 810 offTableEntries, 2188 Implikationen (21 max)
+expandTables(): 47ms
+Tables: 810 onTableEntries, 810 offTableEntries, 11669 Implikationen (186 max)
+checkNiceLoops(): 0ms
+fillTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 786 Implikationen (12 max)
+expandTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7407 Implikationen (108 max)
+checkNiceLoops(): 0ms
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1636 Implikationen (15 max)
+expandTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9329 Implikationen (141 max)
+checkNiceLoops(): 0ms
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1276 Implikationen (15 max)
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1386 Implikationen (13 max)
+expandTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7597 Implikationen (117 max)
+checkNiceLoops(): 0ms
+expandTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 14926 Implikationen (167 max)
+checkNiceLoops(): 0ms
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1578 Implikationen (16 max)
+expandTables(): 31ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10683 Implikationen (151 max)
+checkNiceLoops(): 0ms
+fillTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1132 Implikationen (12 max)
+expandTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 8032 Implikationen (144 max)
+checkNiceLoops(): 15ms
+fillTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1316 Implikationen (14 max)
+expandTables(): 0ms
+Tables: 810 onTableEntries, 810 offTableEntries, 6890 Implikationen (95 max)
+checkNiceLoops(): 0ms
+fillTables(): 16ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1605 Implikationen (19 max)
+expandTables(): 15ms
+Tables: 810 onTableEntries, 810 offTableEntries, 11010 Implikationen (186 max)
+checkNiceLoops(): 0ms
 ]]></system-out>
-  <system-err><![CDATA[nov 30, 2016 12:46:02 AM sudoku.Options readOptions
+  <system-err><![CDATA[nov 30, 2016 9:11:17 AM sudoku.Options readOptions
 INFORMAÇÕES: Reading options from C:\Users\Felipe\AppData\Local\Temp\hodoku.hcfg
 ]]></system-err>
 </testsuite>
