@@ -6,7 +6,6 @@
 package sudoku;
 
 import generator.BackgroundGenerator;
-import generator.BackgroundGeneratorThread;
 import java.awt.Color;
 import java.util.EmptyStackException;
 import static org.hamcrest.CoreMatchers.not;
