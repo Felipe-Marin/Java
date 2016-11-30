@@ -115,33 +115,9 @@ public class SudokuPanelTest {
         panel.setSudoku(sudoku);
         panel.solveUpTo();
         String grid = panel.getSudokuString(ClipboardMode.VALUES_ONLY);
-        char cells[] = grid.toCharArray();
-        int lineStart = 0;
-        int lineEnd = 8;
-        int columnStart = 0;
-        int columnEnd = 81;
-        //Testa as 9 linhas e 9 colunas da tabela do jogo
-        for(int i=0; i<9; i++){
-            //Testa linhas da tabela buscando por números repetidos
-            for(int j=lineStart; j<=lineEnd; j++){
-                for(int h=j; h<lineEnd; h++){
-                    if(cells[h]!='.')
-                        assertThat(cells[h], not(cells[h+1]));
-                }                
-            }
-            //Testa colunas da tabela buscando por números repetidos
-            for(int j=columnStart; j<=columnEnd; j+=9){
-                for(int h=j; h<lineEnd; h+=9){
-                    if(cells[h]!='.')
-                        assertThat(cells[h], not(cells[h+9]));
-                }                
-            }
-            lineStart += 9;
-            lineEnd += 9;
-            columnStart++;
-            columnEnd++;
-        }
-        
+        System.out.println(grid);
+        assertTrue(VerificaSudoku.linhas(grid) && VerificaSudoku.colunas(grid) && VerificaSudoku.quadrados(grid));
+           
         
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Felipe-PC" name="testes.testesHodoku" skipped="0" tests="5" time="7.198" timestamp="2016-11-30T00:32:03">
+<testsuite errors="0" failures="0" hostname="Felipe-PC" name="testes.testesHodoku" skipped="0" tests="5" time="9.158" timestamp="2016-11-30T02:46:02">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="BR" />
@@ -59,7 +59,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.testesHodoku skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\results\TEST-testes.testesHodoku.xml crashfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junitvmwatcher6907908511507480720.properties propsfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junit6627431386989048898.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.testesHodoku skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\test\results\TEST-testes.testesHodoku.xml crashfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junitvmwatcher703032427045348192.properties propsfile=C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\build\junit5744711310770440785.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="jnlp.descriptor" value="application" />
@@ -102,7 +102,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\null512070565" />
+    <property name="javac.includesfile.binary" value="C:\Users\Felipe\Documents\GitHub\Java\qualidade\HoDoKu\trunk\null1761786744" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:C:\Program Files\NetBeans 8.0.2\platform\modules\ext\junit-4.10.jar" />
@@ -412,114 +412,182 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.0.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="generator.BackgroundGeneratorTest" name="testGenerate_DifficultyLevel_GameMode" time="2.028" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testUndo" time="2.379" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testRedo2" time="0.669" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testSolveUpTo" time="1.403" />
-  <testcase classname="sudoku.SudokuPanelTest" name="testRedo" time="0.638" />
+  <testcase classname="generator.BackgroundGeneratorTest" name="testGenerate_DifficultyLevel_GameMode" time="1.619" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testRedo" time="2.959" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testSolveUpTo" time="0.824" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testUndo" time="1.25" />
+  <testcase classname="sudoku.SudokuPanelTest" name="testRedo2" time="2.439" />
   <system-out><![CDATA[generate
-fillTables(): 11ms
-Tables: 810 onTableEntries, 810 offTableEntries, 2172 Implikationen (20 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8588 Implikationen (132 max)
-checkNiceLoops(): 0ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1376 Implikationen (17 max)
-expandTables(): 18ms
-Tables: 810 onTableEntries, 810 offTableEntries, 11922 Implikationen (155 max)
-checkNiceLoops(): 5ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1220 Implikationen (13 max)
-expandTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8383 Implikationen (138 max)
-checkNiceLoops(): 2ms
+fillTables(): 10ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1796 Implikationen (17 max)
+expandTables(): 14ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9877 Implikationen (132 max)
+checkNiceLoops(): 10ms
+fillTables(): 13ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1096 Implikationen (13 max)
+expandTables(): 9ms
+Tables: 810 onTableEntries, 810 offTableEntries, 11532 Implikationen (134 max)
+checkNiceLoops(): 8ms
 fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 2272 Implikationen (20 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 1790 Implikationen (16 max)
+expandTables(): 3ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9008 Implikationen (128 max)
+checkNiceLoops(): 3ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1266 Implikationen (14 max)
+expandTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10896 Implikationen (142 max)
+checkNiceLoops(): 3ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 2222 Implikationen (19 max)
+expandTables(): 3ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9103 Implikationen (120 max)
+checkNiceLoops(): 3ms
+fillTables(): 9ms
+Tables: 810 onTableEntries, 810 offTableEntries, 706 Implikationen (11 max)
 expandTables(): 4ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10973 Implikationen (143 max)
-checkNiceLoops(): 3ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1872 Implikationen (18 max)
-expandTables(): 1ms
-Tables: 810 onTableEntries, 810 offTableEntries, 5846 Implikationen (98 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 6037 Implikationen (112 max)
+checkNiceLoops(): 7ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1360 Implikationen (14 max)
+expandTables(): 3ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10309 Implikationen (136 max)
 checkNiceLoops(): 1ms
 fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 930 Implikationen (15 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 6158 Implikationen (120 max)
-checkNiceLoops(): 2ms
-fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1234 Implikationen (13 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 410 Implikationen (9 max)
+expandTables(): 1ms
+Tables: 810 onTableEntries, 810 offTableEntries, 2155 Implikationen (70 max)
+checkNiceLoops(): 1ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1890 Implikationen (18 max)
 expandTables(): 2ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8983 Implikationen (127 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 10654 Implikationen (132 max)
+checkNiceLoops(): 1ms
+126857493579314628843692157495271836617538249238469571961745382784123965352986714
+fillTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1332 Implikationen (15 max)
+expandTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 17422 Implikationen (173 max)
+checkNiceLoops(): 4ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1058 Implikationen (12 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7330 Implikationen (125 max)
+checkNiceLoops(): 1ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1018 Implikationen (14 max)
+expandTables(): 4ms
+Tables: 810 onTableEntries, 810 offTableEntries, 12265 Implikationen (150 max)
 checkNiceLoops(): 2ms
 fillTables(): 6ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1564 Implikationen (15 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 1122 Implikationen (16 max)
+expandTables(): 4ms
+Tables: 810 onTableEntries, 810 offTableEntries, 11969 Implikationen (150 max)
+checkNiceLoops(): 2ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1344 Implikationen (16 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 9312 Implikationen (137 max)
+checkNiceLoops(): 2ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1096 Implikationen (13 max)
+expandTables(): 4ms
+Tables: 810 onTableEntries, 810 offTableEntries, 14163 Implikationen (140 max)
+buildChain() START (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
+added to chain: NORMAL_NODE/[r7c1]/false/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
+added to chain: NORMAL_NODE/[r7c4]/true/8 - false (Table: NORMAL_NODE/[r7c4]/true/8)
+added to chain: NORMAL_NODE/[r7c4]/false/3 - false (Table: NORMAL_NODE/[r7c4]/false/3)
+added to chain: NORMAL_NODE/[r5c4]/true/3 - false (Table: NORMAL_NODE/[r5c4]/true/3)
+added to chain: NORMAL_NODE/[r5c4]/false/6 - false (Table: NORMAL_NODE/[r5c4]/false/6)
+added to chain: NORMAL_NODE/[r3c4]/true/6 - false (Table: NORMAL_NODE/[r3c4]/true/6)
+added to chain: NORMAL_NODE/[r1c5]/false/6 - false (Table: NORMAL_NODE/[r1c5]/false/6)
+added to chain: NORMAL_NODE/[r1c9]/true/6 - false (Table: NORMAL_NODE/[r1c9]/true/6)
+added to chain: NORMAL_NODE/[r1c9]/false/8 - false (Table: NORMAL_NODE/[r1c9]/false/8)
+added to chain: NORMAL_NODE/[r8c9]/true/8 - false (Table: NORMAL_NODE/[r8c9]/true/8)
+added to chain: NORMAL_NODE/[r8c7]/false/8 - false (Table: NORMAL_NODE/[r8c7]/false/8)
+added to chain: NORMAL_NODE/[r8c7]/true/3 - false (Table: NORMAL_NODE/[r8c7]/true/3)
+added to chain: NORMAL_NODE/[r5c7]/false/3 - false (Table: NORMAL_NODE/[r5c7]/false/3)
+added to chain: NORMAL_NODE/[r5c7]/true/4 - false (Table: NORMAL_NODE/[r5c7]/true/4)
+added to chain: NORMAL_NODE/[r5c5]/false/4 - false (Table: NORMAL_NODE/[r5c5]/false/4)
+added to chain: NORMAL_NODE/[r5c5]/true/2 - false (Table: NORMAL_NODE/[r5c5]/true/2)
+added to chain: NORMAL_NODE/[r5c6]/false/2 - false (Table: NORMAL_NODE/[r5c6]/false/2)
+added to chain: NORMAL_NODE/[r5c6]/true/7 - false (Table: NORMAL_NODE/[r5c6]/true/7)
+added to chain: NORMAL_NODE/[r5c3]/false/7 - false (Table: NORMAL_NODE/[r5c3]/false/7)
+added to chain: NORMAL_NODE/[r2c3]/true/7 - false (Table: NORMAL_NODE/[r2c3]/true/7)
+added to chain: NORMAL_NODE/[r2c3]/false/9 - false (Table: NORMAL_NODE/[r2c3]/false/9)
+added to chain: NORMAL_NODE/[r7c3]/true/9 - false (Table: NORMAL_NODE/[r7c3]/true/9)
+added to chain: NORMAL_NODE/[r7c1]/false/9 - false (Table: NORMAL_NODE/[r7c1]/false/9)
+added to chain: NORMAL_NODE/[r7c1]/true/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
+buildChain() END (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
+checkNiceLoops(): 4ms
+fillTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1860 Implikationen (15 max)
 expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 7775 Implikationen (113 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 13390 Implikationen (166 max)
 checkNiceLoops(): 1ms
 fillTables(): 5ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1240 Implikationen (15 max)
-expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9883 Implikationen (152 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 1440 Implikationen (15 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7372 Implikationen (118 max)
+checkNiceLoops(): 1ms
+fillTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1624 Implikationen (16 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 8418 Implikationen (134 max)
+checkNiceLoops(): 1ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 930 Implikationen (12 max)
+expandTables(): 4ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10507 Implikationen (139 max)
 checkNiceLoops(): 3ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1062 Implikationen (14 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 12767 Implikationen (146 max)
-checkNiceLoops(): 16ms
-fillTables(): 15ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1688 Implikationen (18 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9040 Implikationen (126 max)
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1462 Implikationen (16 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 7015 Implikationen (98 max)
 checkNiceLoops(): 0ms
-fillTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1502 Implikationen (17 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8829 Implikationen (118 max)
-checkNiceLoops(): 2ms
-fillTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 2032 Implikationen (19 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 6381 Implikationen (103 max)
-checkNiceLoops(): 0ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1176 Implikationen (14 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8829 Implikationen (124 max)
-checkNiceLoops(): 0ms
-fillTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1622 Implikationen (18 max)
-expandTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8441 Implikationen (138 max)
-checkNiceLoops(): 2ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1322 Implikationen (14 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 9077 Implikationen (129 max)
-checkNiceLoops(): 0ms
-fillTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1316 Implikationen (16 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 16406 Implikationen (177 max)
-checkNiceLoops(): 15ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1336 Implikationen (15 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 7818 Implikationen (123 max)
-checkNiceLoops(): 0ms
-fillTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1838 Implikationen (16 max)
-expandTables(): 0ms
-Tables: 810 onTableEntries, 810 offTableEntries, 10613 Implikationen (134 max)
-checkNiceLoops(): 16ms
-fillTables(): 16ms
-Tables: 810 onTableEntries, 810 offTableEntries, 1494 Implikationen (17 max)
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1244 Implikationen (15 max)
 expandTables(): 3ms
-Tables: 810 onTableEntries, 810 offTableEntries, 8051 Implikationen (118 max)
+Tables: 810 onTableEntries, 810 offTableEntries, 10057 Implikationen (151 max)
+checkNiceLoops(): 1ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1604 Implikationen (18 max)
+expandTables(): 2ms
+Tables: 810 onTableEntries, 810 offTableEntries, 8754 Implikationen (146 max)
+checkNiceLoops(): 0ms
+fillTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 752 Implikationen (11 max)
+expandTables(): 4ms
+Tables: 810 onTableEntries, 810 offTableEntries, 10438 Implikationen (132 max)
+buildChain() START (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
+added to chain: NORMAL_NODE/[r7c1]/false/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
+added to chain: NORMAL_NODE/[r8c2]/true/8 - false (Table: NORMAL_NODE/[r8c2]/true/8)
+added to chain: NORMAL_NODE/[r6c2]/false/8 - false (Table: NORMAL_NODE/[r6c2]/false/8)
+added to chain: NORMAL_NODE/[r6c2]/true/6 - false (Table: NORMAL_NODE/[r6c2]/true/6)
+added to chain: NORMAL_NODE/[r6c6]/false/6 - false (Table: NORMAL_NODE/[r6c6]/false/6)
+added to chain: NORMAL_NODE/[r4c6]/true/6 - false (Table: NORMAL_NODE/[r4c6]/true/6)
+added to chain: NORMAL_NODE/[r4c6]/false/3 - false (Table: NORMAL_NODE/[r4c6]/false/3)
+added to chain: NORMAL_NODE/[r4c1]/true/3 - false (Table: NORMAL_NODE/[r4c1]/true/3)
+added to chain: NORMAL_NODE/[r5c1]/false/3 - false (Table: NORMAL_NODE/[r5c1]/false/3)
+added to chain: NORMAL_NODE/[r5c1]/true/2 - false (Table: NORMAL_NODE/[r5c1]/true/2)
+added to chain: NORMAL_NODE/[r3c1]/false/2 - false (Table: NORMAL_NODE/[r3c1]/false/2)
+added to chain: NORMAL_NODE/[r3c1]/true/9 - false (Table: NORMAL_NODE/[r3c1]/true/9)
+added to chain: NORMAL_NODE/[r7c1]/false/9 - false (Table: NORMAL_NODE/[r7c1]/false/9)
+added to chain: NORMAL_NODE/[r7c1]/true/8 - false (Table: NORMAL_NODE/[r7c1]/true/8)
+buildChain() END (NORMAL_NODE/[r7c1]/true/8 - NORMAL_NODE/[r7c1]/false/8)
+checkNiceLoops(): 3ms
+fillTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1410 Implikationen (17 max)
+expandTables(): 6ms
+Tables: 810 onTableEntries, 810 offTableEntries, 16813 Implikationen (168 max)
+checkNiceLoops(): 1ms
+fillTables(): 5ms
+Tables: 810 onTableEntries, 810 offTableEntries, 1662 Implikationen (18 max)
+expandTables(): 3ms
+Tables: 810 onTableEntries, 810 offTableEntries, 12021 Implikationen (145 max)
 checkNiceLoops(): 1ms
 ]]></system-out>
-  <system-err><![CDATA[nov 29, 2016 10:32:03 PM sudoku.Options readOptions
+  <system-err><![CDATA[nov 30, 2016 12:46:02 AM sudoku.Options readOptions
 INFORMAÇÕES: Reading options from C:\Users\Felipe\AppData\Local\Temp\hodoku.hcfg
 ]]></system-err>
 </testsuite>
