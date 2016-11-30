@@ -107,7 +107,6 @@ public class BackgroundGeneratorThread implements Runnable {
         // start a new run
         startCreation();
         // and give it back
-        System.out.println(newPuzzle);
         return newPuzzle;
     }
     

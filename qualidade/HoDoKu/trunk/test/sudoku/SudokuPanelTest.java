@@ -5,12 +5,10 @@
  */
 package sudoku;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.awt.print.PageFormat;
-import java.io.File;
+import generator.BackgroundGenerator;
+import generator.BackgroundGeneratorThread;
+import java.awt.Color;
+import java.util.EmptyStackException;
 import static org.hamcrest.CoreMatchers.not;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -18,14 +16,19 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import solver.SudokuSolver;
+
 
 /**
  *
  * @author Felipe
  */
 public class SudokuPanelTest {
+    
     private MainFrame mf;
+    SudokuPanel panel;
+    SudokuPanel panel2;
+    String sudoku;
+    
     public SudokuPanelTest() {
     }
     
@@ -39,8 +42,13 @@ public class SudokuPanelTest {
     
     @Before
     public void setUp() {
-        String file = new String("IniFile");
-        //mf = new MainFrame(file);
+        mf = new MainFrame(null);
+        panel = new SudokuPanel(mf);
+        panel2 = new SudokuPanel(mf);
+        DifficultyLevel level = new DifficultyLevel(DifficultyType.MEDIUM, 1000, java.util.ResourceBundle.getBundle("intl/MainFrame").getString("MainFrame.medium"), new Color(100, 255, 100), Color.BLACK);
+        GameMode mode = GameMode.PLAYING;
+        BackgroundGenerator bg = new BackgroundGenerator();
+        sudoku = bg.generate(level, mode);
     }
     
     @After
@@ -49,62 +57,80 @@ public class SudokuPanelTest {
 
     /**
      * Test of undo method, of class SudokuPanel.
+     * Testa a função de desfazer jogada.
+     * Atribui o mesmo sudoku para dois paineis, executa uma jogada e
+     * a desfaz logo depois, em seguida compara se os dois estão iguais.
      */
     @Test
     public void testUndo() {
-        System.out.println("undo");
-        MainFrame mf = new MainFrame(null);
-        SudokuPanel instance = new SudokuPanel(mf);
-        SudokuPanel instance2 = new SudokuPanel(mf);
-        instance.setSudoku("...31.6.......8....54.9...147.......192...587.......148...6.39....2.......7.51...");
-        instance2.setSudoku("...31.6.......8....54.9...147.......192...587.......148...6.39....2.......7.51...");
-        instance2.setCellFromCellZoomPanel(5);
-        instance2.undo();
-        //instance2.setSudoku(".........4.....98.79..23.....65..1.8.2.1.6.3.1.7..84.....21..54.82.....7.........");
-        System.out.println(instance2.getSudokuString(ClipboardMode.PM_GRID));
-        assertEquals(instance.getSudokuString(ClipboardMode.PM_GRID), instance2.getSudokuString(ClipboardMode.PM_GRID));
+        panel.setSudoku(sudoku);
+        panel2.setSudoku(sudoku);
+        panel2.setCellFromCellZoomPanel(5);
+        panel2.undo();
+        assertEquals(panel.getSudokuString(ClipboardMode.PM_GRID), panel2.getSudokuString(ClipboardMode.PM_GRID));
     }
 
     /**
      * Test of redo method, of class SudokuPanel.
+     * Testa a função de refazer jogada.
+     * Executa uma ação e faz uma copia do painel
+     * Desfaz a ação e a refaz
+     * compara com a cópia para testar se o sudoku voltou ao estado após a jogada
      */
     @Test
     public void testRedo() {
-        MainFrame mf = new MainFrame(null);
-        SudokuPanel instance = new SudokuPanel(mf);
-        SudokuPanel instance2 = new SudokuPanel(mf);
+        panel2.setSudoku(sudoku);
+        panel2.setCellFromCellZoomPanel(5);
+        panel.setSudoku(panel2.getSudokuString(ClipboardMode.PM_GRID));
+        panel2.undo();
+        panel2.redo();
+        assertEquals(panel.getSudokuString(ClipboardMode.PM_GRID), panel2.getSudokuString(ClipboardMode.PM_GRID));
+    }
         
-        instance2.setSudoku("...31.6.......8....54.9...147.......192...587.......148...6.39....2.......7.51...");
-        instance2.setCellFromCellZoomPanel(5);
-        instance.setSudoku(instance2.getSudokuString(ClipboardMode.PM_GRID));
-        instance2.undo();
-        instance2.redo();
-        //instance2.setSudoku(".........4.....98.79..23.....65..1.8.2.1.6.3.1.7..84.....21..54.82.....7.........");
-        System.out.println(instance2.getSudokuString(ClipboardMode.VALUES_ONLY));
-        assertEquals(instance.getSudokuString(ClipboardMode.PM_GRID), instance2.getSudokuString(ClipboardMode.PM_GRID));
+    /**
+     * Test of redo method, of class SudokuPanel.
+     * Testa a função de refazer jogada.
+     * Testa o método Redo sem desfazer alguma jogada
+     * O método não deve tentar retirar o sudoku da pilha que está vazia.
+     */
+    @Test
+    public void testRedo2() {
+        panel.setSudoku(sudoku);
+        panel.setCellFromCellZoomPanel(5);
+        try{
+           panel.redo();
+        }catch(EmptyStackException ex){
+            fail("Redo retirou um valor não existente da pilha.");
+        }
+        
     }
     
+    /**
+     * Test of SolveUpTo method, of class SudokuPanel.
+     * Testa o método que resolve o jogo
+     * Verifica se o método resolveu o jogo de maneira correta,
+     * sem valores repetidos nas linhas e colunas.
+     */
     @Test
     public void testSolveUpTo() {
-        MainFrame mf = new MainFrame(null);
-        SudokuPanel instance = new SudokuPanel(mf);        
-        instance.setSudoku("...31.6.......8....54.9...147.......192...587.......148...6.39....2.......7.51...");
-        instance.solveUpTo();
-        //instance2.setSudoku(".........4.....98.79..23.....65..1.8.2.1.6.3.1.7..84.....21..54.82.....7.........");
-        String grid = instance.getSudokuString(ClipboardMode.VALUES_ONLY);
-        System.out.println(grid);
+        panel.setSudoku(sudoku);
+        panel.solveUpTo();
+        String grid = panel.getSudokuString(ClipboardMode.VALUES_ONLY);
         char cells[] = grid.toCharArray();
         int lineStart = 0;
         int lineEnd = 8;
         int columnStart = 0;
         int columnEnd = 81;
+        //Testa as 9 linhas e 9 colunas da tabela do jogo
         for(int i=0; i<9; i++){
+            //Testa linhas da tabela buscando por números repetidos
             for(int j=lineStart; j<=lineEnd; j++){
                 for(int h=j; h<lineEnd; h++){
                     if(cells[h]!='.')
                         assertThat(cells[h], not(cells[h+1]));
                 }                
             }
+            //Testa colunas da tabela buscando por números repetidos
             for(int j=columnStart; j<=columnEnd; j+=9){
                 for(int h=j; h<lineEnd; h+=9){
                     if(cells[h]!='.')
